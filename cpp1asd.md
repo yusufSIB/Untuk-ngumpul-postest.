@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Nama : Yusuf Subandrio
 //NIM  : 2209116078
 //Kelas: Sisterm Infortmasi B2 
