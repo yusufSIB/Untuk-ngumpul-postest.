@@ -1,0 +1,20 @@
+arr = ['Arsel','Avivah','Daiva',['Wahyu','Wibi']]
+def linearsearch(arr,x):
+    for l in range(len(arr)):
+        if type(arr[l]) == list:
+            hasil_x = linearsearch(arr[l],x)
+            if hasil_x == -1:
+                return -1
+            else:
+                print(f'{x} ditemukan pada indeks {l} kolom {hasil_x}')
+                exit()
+        elif arr[l] == x:
+            return l
+    return -1
+print(arr)
+y = input('Masukan nama yang ingin dicari: ')
+hasil_y = linearsearch(arr,y)
+if hasil_y == -1:
+    print(f'{y} ditemukan pada indeks {hasil_y}')
+else:
+    print(f'{y} ditemukan pada indeks {hasil_y}') 
